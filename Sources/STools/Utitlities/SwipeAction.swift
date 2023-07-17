@@ -29,13 +29,13 @@ public struct SwipeAction: Identifiable {
 
 @resultBuilder
 public struct SwipeActionsResultBuilder {
-    internal static func buildBlock(_ components: SwipeAction...) -> [SwipeAction] {
+    public static func buildBlock(_ components: SwipeAction...) -> [SwipeAction] {
         return components
     }
-    internal static func buildEither(first component: SwipeAction) -> SwipeAction {
+    public static func buildEither(first component: SwipeAction) -> SwipeAction {
         return component
     }
-    internal static func buildEither(second component: SwipeAction) -> SwipeAction {
+    public static func buildEither(second component: SwipeAction) -> SwipeAction {
         return component
     }
 }
